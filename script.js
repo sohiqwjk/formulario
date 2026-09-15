@@ -99,7 +99,7 @@ function mascara_CPF ()
             {
                 if(tel_formatado[7]!=undefined)
                 {
-                    document.getElementById("telForm").value=tel_formatado.slice(0,7)+")"+tel_formatado[7]
+                    document.getElementById("telForm").value=tel_formatado.slice(0,7)+")"
                 }
             }
         if (tel_formatado[8]!= " ")
@@ -111,7 +111,7 @@ function mascara_CPF ()
             }
         if (tel_formatado[10]!= " ")
             {
-                if(tel_formatado[8]!= undefined)
+                if(tel_formatado[10]!= undefined)
                 {
                     document.getElementById("telForm").value=tel_formatado.slice(0,10)+" "
                 }
@@ -120,7 +120,7 @@ function mascara_CPF ()
             {
                 if(tel_formatado[15]!= undefined)
                 {
-                    document.getElementById("telForm").value=tel_formatado.slice(0,15)+"-"
+                    document.getElementById("telForm").value=tel_formatado.slice(0,15)+"-"+tel_formatado[15]
                 }
             }
     }
