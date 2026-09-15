@@ -27,12 +27,12 @@ function mascara_endereco ()
 
     if (cep_formatado[2]!= "."){
         if (cep_formatado[2]!= undefined){
-            document.getElementById("cepForm").value=cep_formatado.slice(0,2)+"."
+            document.getElementById("cepForm").value=cep_formatado.slice(0,2)+"."+cep_formatado[2]
         }
     }
     if (cep_formatado[6]!= "-"){
         if (cep_formatado[6]!= undefined){
-            document.getElementById("cepForm").value=cep_formatado.slice(0,6)+"-"
+            document.getElementById("cepForm").value=cep_formatado.slice(0,6)+"-"+cep_formatado[6]
         }
     }
 
@@ -50,17 +50,17 @@ function mascara_CPF ()
 
     if (cpf_formatado[3]!= "."){
         if (cpf_formatado[3]!= undefined){
-            document.getElementById("cpfForm").value=cpf_formatado.slice(0,3)+"."
+            document.getElementById("cpfForm").value=cpf_formatado.slice(0,3)+"."+cpf_formatado[3]
         }
     }
     if (cpf_formatado[7]!= "."){
         if (cpf_formatado[7]!= undefined){
-            document.getElementById("cpfForm").value=cpf_formatado.slice(0,7)+"."
+            document.getElementById("cpfForm").value=cpf_formatado.slice(0,7)+"."+cpf_formatado[7]
         }
     }
     if (cpf_formatado[11]!= "."){
         if (cpf_formatado[11]!= undefined){
-            document.getElementById("cpfForm").value=cpf_formatado.slice(0,11)+"."
+            document.getElementById("cpfForm").value=cpf_formatado.slice(0,11)+"."+cpf_formatado[11]
         }
     }
 
@@ -138,22 +138,22 @@ function mascara_CNPJ ()
 
     if (cnpj_formatado[2]!= "."){
         if (cnpj_formatado[2]!= undefined){
-            document.getElementById("cnpjForm").value=cnpj_formatado.slice(0,2)+"."
+            document.getElementById("cnpjForm").value=cnpj_formatado.slice(0,2)+"."+cnpj_formatado[2]
         }
     }
     if (cnpj_formatado[6]!= "."){
         if (cnpj_formatado[6]!= undefined){
-            document.getElementById("cnpjForm").value=cnpj_formatado.slice(0,6)+"."
+            document.getElementById("cnpjForm").value=cnpj_formatado.slice(0,6)+"."+cnpj_formatado[6]
         }
     }
     if (cnpj_formatado[10]!= "/"){
         if (cnpj_formatado[10]!= undefined){
-            document.getElementById("cnpjForm").value=cnpj_formatado.slice(0,10)+"/"
+            document.getElementById("cnpjForm").value=cnpj_formatado.slice(0,10)+"/"+cnpj_formatado[10]
         }
     }
     if (cnpj_formatado[15]!= "-"){
         if (cnpj_formatado[15]!= undefined){
-            document.getElementById("cnpjForm").value=cnpj_formatado.slice(0,15)+"-"
+            document.getElementById("cnpjForm").value=cnpj_formatado.slice(0,15)+"-"+cnpj_formatado[15]
         }
     }
 
