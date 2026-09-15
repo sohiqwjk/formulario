@@ -1,0 +1,17 @@
+main{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+section{
+    display: grid;
+    grid-area: 2/2/2/2;
+    justify-content: center;
+}
+div{
+    display: grid;
+    height: 50px;
+}
+input{
+    height: 20px;
+}

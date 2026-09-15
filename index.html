@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Formulário</title>
+</head>
+<body>
+    <main>
+        <section>
+            <form action="" method="get" id="form">
+                <div>
+                     <label for="nome">Nome:</label>
+                    <input type="text" id="nomeForm" oninput=mascara_nome() maxlength="50">
+                </div>
+               
+                <div>
+                    <label for="endereco">Endereço:</label>
+                    <input type="text" id="enderecoForm" oninput=mascara_endereco() maxlength="100">
+                </div>
+                
+                <div>
+                    <label for="cep">CEP:</label>
+                    <input type="text" placeholder="99.999-999" id="cepForm" oninput=mascara_CEP() maxlength="10">
+                </div>
+                
+                <div>
+                    <label for="cpf">CPF:</label>
+                    <input type="text" placeholder="999.999.999.99" id="cpfForm" oninput=mascara_CPF() maxlength="14">
+                </div>
+                
+               <div>
+                    <label for="tel">Telefone:</label>
+                    <input type="tel" placeholder="+55 (99) 9 9999-9999" id="telForm" oninput=mascara_tel() maxlength="20">
+               </div>
+                
+               <div>
+                    <label for="cnpj">CNPJ:</label>
+                    <input type="text" placeholder="99.999.999/9999-99" id="cnpjForm" oninput=mascara_CNPJ() maxlength="18">
+               </div>
+
+               <button type="button" id="abrir">Enviar</button>
+
+               <dialog id="mensagem">
+                    <p>Formulário enviado com sucesso</p>
+                    <button id="fechar">Sair</button>
+               </dialog>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
